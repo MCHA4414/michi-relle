@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe5e5; /* Color de fondo suave en rojo claro */
+}
+
+header {
+    background-color: #ff4d4d; /* Rojo brillante para el encabezado */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label.fa-bars {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    display: none; /* Ocultar por defecto en pantallas grandes */
+}
+
+/* Estilo del menú */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Ocultar el menú en pantallas pequeñas por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Ajustar según el tamaño del encabezado */
+        left: 0;
+        width: 100%;
+        background-color: #ff4d4d; /* Rojo para el menú desplegable */
+    }
+
+    .menu a {
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+    }
+
+    .menu a:last-child {
+        border-bottom: none;
+    }
+
+    input[type="checkbox"]:checked ~ .menu {
+        display: flex; /* Mostrar el menú cuando el checkbox está marcado */
+    }
+
+    label.fa-bars {
+        display: block; /* Mostrar el icono de hamburguesa en pantallas pequeñas */
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff4e6; /* Fondo en naranja claro */
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+article {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff; /* Fondo blanco para los artículos */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+article img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    margin-top: 0;
+    color: #ff6600; /* Naranja para los títulos de los artículos */
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+article .precio {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ff4d4d; /* Rojo para los precios */
+}
+
+footer {
+    background-color: #ff4d4d; /* Rojo para el pie de página */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.red-soc a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.red-soc a:hover {
+    color: #f2f2f2;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    box-shadow: 0 0 15px 20px yellow;
+}
+
