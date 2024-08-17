@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffe5e5; /* Color de fondo suave en rojo claro */
+    background-color: #ffe5e5;
 }
 
 header {
-    background-color: #ff4d4d; /* Rojo brillante para el encabezado */
+    background-color: #ff4d4d;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -32,10 +32,9 @@ label.fa-bars {
     font-size: 2rem;
     cursor: pointer;
     color: #fff;
-    display: none; /* Ocultar por defecto en pantallas grandes */
+    display: none;
 }
 
-/* Estilo del menú */
 .menu {
     display: flex;
     justify-content: center;
@@ -46,22 +45,34 @@ label.fa-bars {
     padding: 0;
 }
 
-/* Menú en pantallas pequeñas */
+.menu a {
+    padding: 10px 20px;
+    background-color: #ff6666;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #ff4d4d;
+    transform: translateY(-3px);
+}
+
 @media (max-width: 768px) {
     .menu {
-        display: none; /* Ocultar el menú en pantallas pequeñas por defecto */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Ajustar según el tamaño del encabezado */
+        top: 60px;
         left: 0;
         width: 100%;
-        background-color: #ff4d4d; /* Rojo para el menú desplegable */
+        background-color: #ff4d4d;
     }
 
     .menu a {
-        padding: 10px;
-        color: #fff;
-        text-align: center;
+        padding: 15px 20px;
         border-bottom: 1px solid #fff;
     }
 
@@ -70,11 +81,11 @@ label.fa-bars {
     }
 
     input[type="checkbox"]:checked ~ .menu {
-        display: flex; /* Mostrar el menú cuando el checkbox está marcado */
+        display: flex;
     }
 
     label.fa-bars {
-        display: block; /* Mostrar el icono de hamburguesa en pantallas pequeñas */
+        display: block;
     }
 }
 
@@ -85,7 +96,7 @@ main {
 section {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #fff4e6; /* Fondo en naranja claro */
+    background-color: #fff4e6;
 }
 
 section h2 {
@@ -101,10 +112,10 @@ section h2 {
 article {
     margin-bottom: 20px;
     text-align: center;
-    background-color: #fff; /* Fondo blanco para los artículos */
+    background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 article img {
@@ -116,7 +127,7 @@ article img {
 
 article h3 {
     margin-top: 0;
-    color: #ff6600; /* Naranja para los títulos de los artículos */
+    color: #ff6600;
 }
 
 article p {
@@ -126,11 +137,11 @@ article p {
 article .precio {
     font-weight: bold;
     font-size: 1.2rem;
-    color: #ff4d4d; /* Rojo para los precios */
+    color: #ff4d4d;
 }
 
 footer {
-    background-color: #ff4d4d; /* Rojo para el pie de página */
+    background-color: #ff4d4d;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -158,4 +169,3 @@ img {
 img:hover {
     box-shadow: 0 0 15px 20px yellow;
 }
-
