@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url(menu.css);
+@import url(banner.css);
+@import url(blog.css);
+@import url(info.css);
+@import url(ubicacion.css);
+@import url(footer.css);
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe5e5;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff4e6;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    box-shadow: 0 0 15px 20px yellow;
+}

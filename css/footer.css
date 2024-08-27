@@ -1,0 +1,18 @@
+
+footer {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.red-soc a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.red-soc a:hover {
+    color: #f2f2f2;
+}
